@@ -24,7 +24,8 @@ class App < Sinatra::Base
 
   post '/' do
     if generate_signature settings.weixin_token == params[:signature]
-      Sinatra::WeiXinBOT::Reply.new()
+      message_data = Sinatra::WeiXinBOT::Message.new(request.body)
+      message_data.replied(:type => "text", :body => "Hello World!")
     end
   end
 

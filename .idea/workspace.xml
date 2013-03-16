@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b657f937-5679-4515-9256-8534c9dd5c90" name="Default" comment="" />
+    <list default="true" id="b657f937-5679-4515-9256-8534c9dd5c90" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="weixin_bot.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Gemfile" changelist="b657f937-5679-4515-9256-8534c9dd5c90" time="1363323799098" ignored="false" />
     <file path="/weixin_bot.rb" changelist="b657f937-5679-4515-9256-8534c9dd5c90" time="1363433336099" ignored="false" />
-    <file path="/Dummy.txt" changelist="b657f937-5679-4515-9256-8534c9dd5c90" time="1363324087089" ignored="false" />
+    <file path="/Dummy.txt" changelist="b657f937-5679-4515-9256-8534c9dd5c90" time="1363433595677" ignored="false" />
     <file path="/template.rb" changelist="b657f937-5679-4515-9256-8534c9dd5c90" time="1363334020937" ignored="false" />
-    <file path="/app.rb" changelist="b657f937-5679-4515-9256-8534c9dd5c90" time="1363433352164" ignored="false" />
+    <file path="/app.rb" changelist="b657f937-5679-4515-9256-8534c9dd5c90" time="1363433645684" ignored="false" />
     <file path="/config.ru" changelist="b657f937-5679-4515-9256-8534c9dd5c90" time="1363428491072" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +52,7 @@
       <file leaf-file-name="app.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="33" selection-start="285" selection-end="285" vertical-scroll-proportion="0.34244603">
+            <state line="23" column="33" selection-start="326" selection-end="326" vertical-scroll-proportion="0.46330935">
               <folding />
             </state>
           </provider>
@@ -59,6 +64,14 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Gemfile" root0="SKIP_INSPECTION" />
@@ -97,7 +110,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -154,7 +167,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="fileTemplates" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="FullScreen" value="false" />
     <property name="last.edited.regexp" value="dsadasdasd" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -349,6 +362,24 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b657f937-5679-4515-9256-8534c9dd5c90" name="Default" comment="" />
@@ -553,7 +584,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="33" selection-start="285" selection-end="285" vertical-scroll-proportion="0.34244603">
+        <state line="23" column="33" selection-start="326" selection-end="326" vertical-scroll-proportion="0.46330935">
           <folding />
         </state>
       </provider>
