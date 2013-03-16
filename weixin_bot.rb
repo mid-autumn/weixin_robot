@@ -15,31 +15,31 @@ module Sinatra
     end
     module BOTMethods
 
-      def is_text?
+      def text?
         @type == "text"
       end
 
-      def is_news?
+      def news?
         @type == "news"
       end
 
-      def is_music?
+      def music?
         @type = "music"
       end
 
-      def is_image?
+      def image?
         @type == "image"
       end
 
-      def is_location?
+      def location?
         @type == "location"
       end
 
-      def is_link?
+      def link?
         @type == "link"
       end
 
-      def is_event?
+      def event?
         @type == "event"
       end
     end # BOTMethods
@@ -89,11 +89,11 @@ module Sinatra
         @bot          = options.delete(:bot)
         @user         = options.delete(:user)
         @flag         = options.delete(:flag)
-        if is_text?
+        if text?
           @body       = options.delete(:body)
-        elsif is_music?
+        elsif music?
           @music      = options.delete(:music)
-        elsif is_news?
+        elsif news?
           @articles   = options.delete(:articles)
         end
       end
@@ -104,11 +104,11 @@ module Sinatra
         xml   +=  "<FromUserName><![CDATA[#{@bot}]]></FromUserName>\n"
         xml   +=  "<CreateTime>#{@created_at}</CreateTime>\n"
         xml   +=  "<MsgType><![CDATA[#{@type}]]></MsgType>\n"
-        if is_text?
+        if text?
           xml +=  "#{text_message}"
-        elsif is_music?
+        elsif music?
           xml +=  "#{music_message}"
-        elsif is_news?
+        elsif news?
           xml +=  "#{news_message}"
         end
         xml   +=  "<FuncFlag>#{@flag}</FuncFlag>\n"

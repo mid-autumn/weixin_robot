@@ -40,7 +40,7 @@
       <file leaf-file-name="weixin_bot.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weixin_bot.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="40" selection-start="196" selection-end="204" vertical-scroll-proportion="0.18129496">
+            <state line="161" column="5" selection-start="5609" selection-end="5609" vertical-scroll-proportion="0.75827336">
               <folding />
             </state>
           </provider>
@@ -581,7 +581,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weixin_bot.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="40" selection-start="196" selection-end="204" vertical-scroll-proportion="0.18129496">
+        <state line="161" column="5" selection-start="5609" selection-end="5609" vertical-scroll-proportion="0.75827336">
           <folding />
         </state>
       </provider>
