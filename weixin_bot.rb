@@ -6,7 +6,7 @@ require 'digest/sha1'
 module Sinatra
   module WeiXinBOT
     module HelperMethods
-      def generate_signature(token=nil?)
+      def generate_signature(token=nil)
         weixin_token = token || settings.wexin_token
         signature, timestamp, nonce = params[:signature], params[:timestamp], params[:nonce]
         weixin_sha1 = [token, timestamp.to_s, nonce.to_s].sort!.join
