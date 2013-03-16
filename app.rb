@@ -5,12 +5,12 @@ require 'bundler'
 Bundler.require
 
 require 'sinatra/base'
-require './weixin_bot'
+require './weixin_robot'
 
 
 
 class App < Sinatra::Base
-  register Sinatra::WeiXinBOT
+  register Sinatra::WeiXinRobot
 
   configure do
     enable  :logging
@@ -24,7 +24,7 @@ class App < Sinatra::Base
 
   post '/' do
     if generate_signature settings.weixin_token == params[:signature]
-      message_data = Sinatra::WeiXinBOT::Message.new(request.body)
+      message_data = Sinatra::WeiXinRobot::Message.new(request.body)
       message_data.replied(:type => "text", :body => "Hello World!")
     end
   end

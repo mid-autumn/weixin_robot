@@ -4,7 +4,7 @@ require 'sinatra/base'
 require 'digest/sha1'
 
 module Sinatra
-  module WeiXinBOT
+  module WeiXinRobot
     module HelperMethods
       def generate_signature(token=nil)
         weixin_token = token || settings.wexin_token
@@ -13,7 +13,7 @@ module Sinatra
         Digest::SHA1.hexdigest(weixin_sha1)
       end
     end
-    module BOTMethods
+    module RobotMethods
 
       def text?
         @type == "text"
@@ -44,8 +44,8 @@ module Sinatra
       end
     end # BOTMethods
     class Message
-      include BOTMethods
-      attr_reader :user, :bot, :created_at, :type, :body,
+      include RobotMethods
+      attr_reader :user, :robot, :created_at, :type, :body,
                   :id, :pic_url, :location_x, :location_y, :scale,
                   :label, :title, :description, :url, :event,
                   :latitude, :longitude, :precision
@@ -53,7 +53,7 @@ module Sinatra
       def initialize(raw)
         unless raw.instance_of?(Hash)
           raw          = raw.string
-          @bot         = raw.scan(/<ToUserName><!\[CDATA\[(.*)\]\]><\/ToUserName>/).join
+          @robot         = raw.scan(/<ToUserName><!\[CDATA\[(.*)\]\]><\/ToUserName>/).join
           @user        = raw.scan(/<FromUserName><!\[CDATA\[(.*)\]\]><\/FromUserName>/).join
           @created_at  = raw.scan(/<CreateTime>(\d+)<\/CreateTime>/).join
           @type        = raw.scan(/<MsgType><!\[CDATA\[(.*)\]\]><\/MsgType>/).join
@@ -75,7 +75,7 @@ module Sinatra
       end
 
       def replied(params={})
-        options = {:bot => @bot, :user => @user, :created_at => Time.now.to_i, :flag => 0}
+        options = {:robot => @robot, :user => @user, :created_at => Time.now.to_i, :flag => 0}
         Reply.new(options.merge!(params))
       end
     end # Message
@@ -86,7 +86,7 @@ module Sinatra
       def initialize(options={})
         @created_at   = options.delete(:created_at)
         @type         = options.delete(:type)
-        @bot          = options.delete(:bot)
+        @robot          = options.delete(:robot)
         @user         = options.delete(:user)
         @flag         = options.delete(:flag)
         if text?
@@ -101,7 +101,7 @@ module Sinatra
       def to_xml
         xml   =   "<xml>\n"
         xml   +=  "<ToUserName><![CDATA[#{@user}]]></ToUserName>\n"
-        xml   +=  "<FromUserName><![CDATA[#{@bot}]]></FromUserName>\n"
+        xml   +=  "<FromUserName><![CDATA[#{@robot}]]></FromUserName>\n"
         xml   +=  "<CreateTime>#{@created_at}</CreateTime>\n"
         xml   +=  "<MsgType><![CDATA[#{@type}]]></MsgType>\n"
         if text?
@@ -159,7 +159,7 @@ module Sinatra
     end
   end # WeiXinBot
 
-  register WeiXinBOT
+  register WeiXinRobot
 end # Sinatra
 
 

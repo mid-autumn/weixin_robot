@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b657f937-5679-4515-9256-8534c9dd5c90" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weixin_bot.rb" afterPath="$PROJECT_DIR$/weixin_bot.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/weixin_bot.rb" afterPath="$PROJECT_DIR$/weixin_robot.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
     </list>
     <ignored path="weixin_bot.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Gemfile" changelist="b657f937-5679-4515-9256-8534c9dd5c90" time="1363323799098" ignored="false" />
-    <file path="/weixin_bot.rb" changelist="b657f937-5679-4515-9256-8534c9dd5c90" time="1363433336099" ignored="false" />
+    <file path="/weixin_bot.rb" changelist="b657f937-5679-4515-9256-8534c9dd5c90" time="1363434959657" ignored="false" />
     <file path="/Dummy.txt" changelist="b657f937-5679-4515-9256-8534c9dd5c90" time="1363433595677" ignored="false" />
     <file path="/template.rb" changelist="b657f937-5679-4515-9256-8534c9dd5c90" time="1363334020937" ignored="false" />
-    <file path="/app.rb" changelist="b657f937-5679-4515-9256-8534c9dd5c90" time="1363433645684" ignored="false" />
+    <file path="/app.rb" changelist="b657f937-5679-4515-9256-8534c9dd5c90" time="1363435020314" ignored="false" />
     <file path="/config.ru" changelist="b657f937-5679-4515-9256-8534c9dd5c90" time="1363428491072" ignored="false" />
+    <file path="/temp.rb" changelist="b657f937-5679-4515-9256-8534c9dd5c90" time="1363434990405" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,19 +39,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weixin_bot.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/weixin_bot.rb">
+      <file leaf-file-name="weixin_robot.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weixin_robot.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="161" column="5" selection-start="5609" selection-end="5609" vertical-scroll-proportion="0.75827336">
+            <state line="103" column="47" selection-start="3620" selection-end="3620" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="33" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+            <state line="20" column="30" selection-start="310" selection-end="310" vertical-scroll-proportion="0.4028777">
               <folding />
             </state>
           </provider>
@@ -72,7 +74,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Gemfile" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/weixin_bot.rb" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/weixin_robot.rb" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app.rb" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
@@ -81,8 +83,8 @@
         <option value="$PROJECT_DIR$/template.rb" />
         <option value="$PROJECT_DIR$/config.ru" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/weixin_bot.rb" />
+        <option value="$PROJECT_DIR$/app.rb" />
       </list>
     </option>
   </component>
@@ -171,7 +173,7 @@
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Ruby.app">
-    <configuration default="false" name="weixin_bot" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration default="false" name="weixin_robot" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="weixin_bot" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
       <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
@@ -187,7 +189,7 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/weixin_bot.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/weixin_robot.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
@@ -344,7 +346,7 @@
       <method />
     </configuration>
     <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Ruby.weixin_bot" />
+      <item index="0" class="java.lang.String" itemvalue="Ruby.weixin_robot" />
       <item index="1" class="java.lang.String" itemvalue="Ruby.template" />
       <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in: weixin_bot" />
       <item index="3" class="java.lang.String" itemvalue="Ruby.app" />
@@ -352,7 +354,7 @@
     <recent_temporary>
       <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Ruby.app" />
-        <item index="1" class="java.lang.String" itemvalue="Ruby.weixin_bot" />
+        <item index="1" class="java.lang.String" itemvalue="Ruby.weixin_robot" />
         <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in: weixin_bot" />
         <item index="3" class="java.lang.String" itemvalue="Ruby.template" />
       </list>
@@ -411,9 +413,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871014" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25681493" sideWeight="0.667129" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25681493" sideWeight="0.67081606" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871014" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -422,7 +425,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -493,7 +495,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weixin_bot.rb">
+    <entry file="file://$PROJECT_DIR$/weixin_robot.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="70" column="39" selection-start="2481" selection-end="2487" vertical-scroll-proportion="0.0">
           <folding />
@@ -514,7 +516,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weixin_bot.rb">
+    <entry file="file://$PROJECT_DIR$/weixin_robot.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="114" column="32" selection-start="3968" selection-end="3968" vertical-scroll-proportion="0.0">
           <folding />
@@ -572,16 +574,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.rb">
+    <entry file="file://$PROJECT_DIR$/weixin_robot.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="33" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+        <state line="103" column="47" selection-start="3620" selection-end="3620" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weixin_bot.rb">
+    <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="161" column="5" selection-start="5609" selection-end="5609" vertical-scroll-proportion="0.75827336">
+        <state line="20" column="30" selection-start="310" selection-end="310" vertical-scroll-proportion="0.4028777">
           <folding />
         </state>
       </provider>
