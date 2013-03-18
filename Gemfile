@@ -1,3 +1,3 @@
-source    "http://ruby.taobao.org"
+source  'http://ruby.taobao.org'
 
 gem 'sinatra'
